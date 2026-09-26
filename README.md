@@ -116,9 +116,10 @@ Every app in the family keeps the same five promises:
 ## Start here
 
 1. Install Python if you do not have it — [python.org/downloads](https://www.python.org/downloads/) (tick *Add to PATH*).
-2. Pick an app from the table above, open its repository, press **Code → Download ZIP**, and unzip it.
-3. **Windows:** double-click `run.bat`. **macOS / Linux:** `./run.sh`.
-4. A browser window opens with the app. That is all there is.
+2. Pick an app from the table above and open its **Releases** page — or see them all with pictures at [agarwalrishu13.github.io/nano](https://agarwalrishu13.github.io/nano/).
+3. Download the ZIP, unzip it anywhere.
+4. **Windows:** double-click `run.bat`. **macOS / Linux:** `./run.sh`.
+5. A browser window opens with the app. That is all there is.
 
 The best first app is [**nanoHome**](https://github.com/Agarwalrishu13/nanohome) —
 after that you never have to choose from a list again; it shows whatever is on
