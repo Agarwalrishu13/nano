@@ -1,0 +1,35 @@
+{
+  "family": "nano",
+  "description": "Eleven apps for people who do not code. No accounts, no internet needed, nothing to install.",
+  "author": "Priyanshu Agarwal",
+  "license": "MIT",
+  "requires": "Python 3.9+",
+  "launch": "run.bat (Windows) or ./run.sh (macOS/Linux)",
+  "apps": [
+    {"id": "nanohome",  "name": "nanoHome",  "emoji": "🧭", "what": "One front door for every nano app on this computer",                       "port": 8762, "repo": "https://github.com/Agarwalrishu13/nanohome"},
+    {"id": "nanolaama", "name": "nanoLaama", "emoji": "🧠", "what": "Talk to an AI on your own computer — offline, no account, no key",          "port": 8760, "repo": "https://github.com/Agarwalrishu13/nanolaama"},
+    {"id": "nanodoc",   "name": "nanoDoc",   "emoji": "📚", "what": "Drop in a document, ask it anything — answers show the paragraph they came from", "port": 8763, "repo": "https://github.com/Agarwalrishu13/nanodoc"},
+    {"id": "nanolearn", "name": "nanoLearn", "emoji": "📊", "what": "Drop a spreadsheet, get an answer machine",                                  "port": 8761, "repo": "https://github.com/Agarwalrishu13/nanolearn"},
+    {"id": "nanosay",   "name": "nanoSay",   "emoji": "🔊", "what": "Have anything read out loud by the voice already in your computer",          "port": 8766, "repo": "https://github.com/Agarwalrishu13/nanosay"},
+    {"id": "nanopick",  "name": "nanoPick",  "emoji": "🧲", "what": "Find your files by saying what you remember",                                "port": 8779, "repo": "https://github.com/Agarwalrishu13/nanopick"},
+    {"id": "nanotune",  "name": "nanoTune",  "emoji": "🎵", "what": "Your music, one page, no account — point it at a folder and press play",     "port": 8776, "repo": "https://github.com/Agarwalrishu13/nanotune"},
+    {"id": "nanowrap",  "name": "nanoWrap",  "emoji": "🧰", "what": "The programs already on your computer, with buttons",                        "port": 8765, "repo": "https://github.com/Agarwalrishu13/nanowrap"},
+    {"id": "nanoshell", "name": "nanoShell", "emoji": "⌨️", "what": "Any program at all, with words instead of flags",                            "port": 8767, "repo": "https://github.com/Agarwalrishu13/nanoshell"},
+    {"id": "nanogit",   "name": "nanoGit",   "emoji": "🗂", "what": "Your folder, kept safe and put online, without learning git",                "port": 8778, "repo": "https://github.com/Agarwalrishu13/nanogit"},
+    {"id": "nanodesk",  "name": "nanoDesk",  "emoji": "🖥", "what": "Every nano-style app you have, one click away",                              "port": 8782, "repo": "https://github.com/Agarwalrishu13/nanodesk"},
+    {"id": "nonoforge", "name": "nonoForge", "emoji": "🃏", "what": "Pick a card, answer two questions, press one button — a working app",        "port": 8762, "repo": "https://github.com/Agarwalrishu13/nonoforge"}
+  ],
+  "engine_room": [
+    {"id": "nanollama.c", "name": "nanollama.c", "emoji": "⚙️", "what": "The inference engine in ~1400 lines of C",      "repo": "https://github.com/Agarwalrishu13/nanollama.c"},
+    {"id": "nanobrain",   "name": "nanobrain",   "emoji": "🧬", "what": "Pre-training from scratch in raw PyTorch",       "repo": "https://github.com/Agarwalrishu13/nanobrain"},
+    {"id": "nanoforge",   "name": "nanoforge",   "emoji": "🏗", "what": "The offline studio: build, train, export",       "repo": "https://github.com/Agarwalrishu13/nanoforge"},
+    {"id": "nanorl",      "name": "nanorl",      "emoji": "🎯", "what": "SFT and DPO alignment for tiny models",          "repo": "https://github.com/Agarwalrishu13/nanorl"}
+  ],
+  "promises": [
+    "Nothing to install beyond Python 3.9+",
+    "Nothing leaves your computer",
+    "Plain words everywhere, honest about what it does not know",
+    "Nothing is destroyed without being asked",
+    "Works offline"
+  ]
+}
