@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the nano family — eleven apps for people who don't code</title>
+<meta name="description" content="Eleven offline-first apps: chat with a local AI, ask a document questions, find lost files, keep folders safe, play your music. No accounts, nothing to install, works offline.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>nano</text></svg>">
+<style>
+:root {
+  --bg: #0b0d12; --surface: #141821; --surface-2: #1b2130;
+  --border: #262f42; --text: #e9edf6; --muted: #99a5bd; --faint: #67718a;
+  --accent: #ffb454; --accent-2: #58a6ff; --good: #4ade80;
+  --radius: 14px; --sans: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: radial-gradient(1100px 600px at 15% -10%, #1a2133 0%, var(--bg) 55%) fixed;
+  color: var(--text); font-family: var(--sans); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1020px; margin: 0 auto; padding: 0 22px 90px; }
+a { color: var(--accent-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero { text-align: center; padding: 84px 0 40px; }
+.hero .mark { font-size: 54px; }
+.hero h1 { font-size: clamp(34px, 5.6vw, 52px); margin: 12px 0 14px; letter-spacing: -0.03em; }
+.hero h1 span { color: var(--accent); }
+.hero p { color: var(--muted); max-width: 640px; margin: 0 auto 26px; font-size: 18px; }
+.pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.pill { font-size: 13px; color: var(--muted); border: 1px solid var(--border);
+  background: var(--surface); border-radius: 999px; padding: 6px 14px; }
+
+h2 { font-size: 24px; letter-spacing: -0.02em; margin: 64px 0 6px; }
+.sub { color: var(--muted); margin: 0 0 22px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.card {
+  display: block; padding: 18px; border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--surface-2), var(--surface));
+  border: 1px solid var(--border); color: var(--text);
+  transition: transform .12s ease, border-color .14s;
+}
+.card:hover { transform: translateY(-3px); border-color: var(--accent); text-decoration: none; }
+.card .emoji { font-size: 24px; }
+.card .name { font-weight: 650; font-size: 16.5px; margin: 6px 0 2px; }
+.card .what { color: var(--muted); font-size: 14px; }
+.card .dl { color: var(--faint); font-size: 12.5px; margin-top: 10px; }
+.card .dl b { color: var(--accent-2); font-weight: 600; }
+
+.engine { border-left: 3px solid var(--accent); padding-left: 18px; margin: 14px 0; }
+.engine .name { font-weight: 650; }
+.engine p { margin: 2px 0 0; color: var(--muted); font-size: 14.5px; }
+
+.start { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px; margin-top: 14px; }
+.start ol { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+.start code { font-family: ui-monospace, Consolas, monospace; font-size: 13px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 1px 7px; }
+
+footer { margin-top: 70px; text-align: center; color: var(--faint); font-size: 13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <div class="mark">🧭</div>
+    <h1>the <span>nano</span> family</h1>
+    <p>Eleven apps for people who don't code. Talk to an AI, ask a document a question,
+    find a lost file, keep a folder safe, play your music — on your own computer,
+    in plain words, with nothing to install.</p>
+    <div class="pills">
+      <span class="pill">Python 3.9+ is the only requirement</span>
+      <span class="pill">works offline</span>
+      <span class="pill">no accounts · no telemetry</span>
+      <span class="pill">800+ automated tests</span>
+    </div>
+  </section>
+
+  <h2>The apps</h2>
+  <p class="sub">Every one starts the same way: download the ZIP, unzip it, double-click <b>run.bat</b> (or <b>./run.sh</b>).</p>
+  <div class="grid">
+    <a class="card" href="https://github.com/Agarwalrishu13/nanohome">
+      <div class="emoji">🧭</div><div class="name">nanoHome</div>
+      <div class="what">One front door for every nano app on this computer — finds them, explains them, starts them.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanolaama">
+      <div class="emoji">🧠</div><div class="name">nanoLaama</div>
+      <div class="what">Talk to an AI on your own computer — offline, no account, no key.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanodoc">
+      <div class="emoji">📚</div><div class="name">nanoDoc</div>
+      <div class="what">Drop in a document, ask it anything — every answer shows the paragraph it came from.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanolearn">
+      <div class="emoji">📊</div><div class="name">nanoLearn</div>
+      <div class="what">Drop a spreadsheet, get an answer machine — which column matters, how well it guessed.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanosay">
+      <div class="emoji">🔊</div><div class="name">nanoSay</div>
+      <div class="what">Have anything read out loud by the voice already inside your computer.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanopick">
+      <div class="emoji">🧲</div><div class="name">nanoPick</div>
+      <div class="what">Find your files by saying what you remember — "a picture called receipt, last month".</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanotune">
+      <div class="emoji">🎵</div><div class="name">nanoTune</div>
+      <div class="what">Your music, one page, no account — point it at a folder and press play.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanowrap">
+      <div class="emoji">🧰</div><div class="name">nanoWrap</div>
+      <div class="what">The programs already on your computer, with buttons — shrink a video, join PDFs, make a zip.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanoshell">
+      <div class="emoji">⌨️</div><div class="name">nanoShell</div>
+      <div class="what">Any program at all, with words instead of flags — its own help becomes a form you fill in.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanogit">
+      <div class="emoji">🗂</div><div class="name">nanoGit</div>
+      <div class="what">Your folder, kept safe and put online, without learning git. Nothing is ever deleted.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nanodesk">
+      <div class="emoji">🖥</div><div class="name">nanoDesk</div>
+      <div class="what">Every nano-style app you have, one click away, explained like to a stranger.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+    <a class="card" href="https://github.com/Agarwalrishu13/nonoforge">
+      <div class="emoji">🃏</div><div class="name">nonoForge</div>
+      <div class="what">Pick a card, answer two questions, press one button — you have a working app.</div>
+      <div class="dl"><b>Download</b> · releases</div></a>
+  </div>
+
+  <h2>The engine room</h2>
+  <p class="sub">For people who want to see the gears — how a small AI is built, trained and run.</p>
+  <div class="engine">
+    <div class="name">⚙️ <a href="https://github.com/Agarwalrishu13/nanollama.c">nanollama.c</a> — the inference engine</div>
+    <p>~1,400 lines of dependency-free C: transformer, BPE tokenizer, hand-rolled thread pool, int8 quantization.</p>
+  </div>
+  <div class="engine">
+    <div class="name">🧬 <a href="https://github.com/Agarwalrishu13/nanobrain">nanobrain</a> — training from scratch</div>
+    <p>A Llama-2 transformer in raw PyTorch — 16.9M parameters, 35 hours of CPU — exported to the engine's format.</p>
+  </div>
+  <div class="engine">
+    <div class="name">🏗 <a href="https://github.com/Agarwalrishu13/nanoforge">nanoforge</a> · 🎯 <a href="https://github.com/Agarwalrishu13/nanorl">nanorl</a> — studio and alignment</div>
+    <p>Describe an architecture, train it, export it — then teach it to answer with SFT and DPO.</p>
+  </div>
+
+  <h2>Start here</h2>
+  <div class="start">
+    <ol>
+      <li>Install Python if you don't have it — <a href="https://www.python.org/downloads/">python.org/downloads</a> (tick <i>Add to PATH</i>).</li>
+      <li>Pick an app above, open its <b>Releases</b> page, download the ZIP.</li>
+      <li>Unzip it anywhere. Double-click <code>run.bat</code> (Windows) or run <code>./run.sh</code> (macOS / Linux).</li>
+      <li>A browser window opens with the app. That is all there is.</li>
+    </ol>
+  </div>
+
+  <footer>
+    MIT license · made by <a href="https://github.com/Agarwalrishu13">Priyanshu Agarwal</a> ·
+    the map of this project lives in the <a href="https://github.com/Agarwalrishu13/nano">nano repository</a>
+  </footer>
+
+</div>
+</body>
+</html>
